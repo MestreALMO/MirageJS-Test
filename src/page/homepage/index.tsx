@@ -11,10 +11,14 @@ import {
 import { Navbar } from "../../components/Navbar";
 import { Table } from "./components/Table";
 
-export const Homepage = () => {
+interface HeaderProps {
+  onOpenNewTransactionModal: () => void;
+}
+
+export const Homepage = ({ onOpenNewTransactionModal }: HeaderProps) => {
   return (
     <>
-      <Navbar />
+      <Navbar onOpenNewTransactionModal={onOpenNewTransactionModal} />
       <Container>
         <ContainerSection>
           <InfoBoxContainer>

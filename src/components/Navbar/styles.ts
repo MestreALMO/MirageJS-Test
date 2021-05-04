@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Content = styled.header`
   background: var(--blue-600);
-  /* color: var(--gray-800); */
 `;
 
 export const ContentMaxWidth = styled.div`
@@ -12,15 +11,31 @@ export const ContentMaxWidth = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  .ReactModal__Content--after-open {
+    background: var(--blue-600) !important;
+  }
 `;
 
 export const Logo = styled.h2`
   display: flex;
   justify-content: center;
+  position: relative;
 
   svg {
+    color: var(--green-500);
     font-size: 2rem;
     margin-right: 0.5rem;
+    z-index: +1;
+  }
+
+  .whitePart {
+    background: var(--white);
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
   }
 `;
 

@@ -45,7 +45,7 @@ export const InfoBox = styled.div`
   }
 
   &.total {
-    background: var(--green-400);
+    background: var(--green-100);
 
     svg {
       color: var(--green-700);
