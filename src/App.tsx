@@ -62,7 +62,7 @@ function App() {
   async function handleCreateNewBrand(event: FormEvent) {
     event.preventDefault();
 
-    const data = { brandName, brandOrigin };
+    const data = { name: brandName, origin: brandOrigin };
 
     const response = await api.post("/brands", data);
     const { brand } = response.data;
